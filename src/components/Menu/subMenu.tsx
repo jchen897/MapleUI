@@ -6,9 +6,9 @@ import Icon from '../Icon/icon'
 import Transition from '../Transition/transition'
 export interface SubMenuProps {
   index?: string;
-  /**下拉菜单选项的文字 */
+  /**Title */
   title: string;
-  /**下拉菜单选型的扩展类名 */
+  /**ClassName for drop-down */
   className?: string;
 }
 

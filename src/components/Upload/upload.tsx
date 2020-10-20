@@ -14,41 +14,41 @@ export interface UploadFile {
   error?: any;
 }
 export interface UploadProps {
-  /**必选参数, 上传的地址 */
+  /**Required, the upload address*/
   action: string;
-  /**上传的文件列表,*/
+  /**The array for uploaded files */
   defaultFileList?: UploadFile[];
-  /**上传文件之前的钩子，参数为上传的文件，若返回 false 或者 Promise 则停止上传。 */
+  /**The event before upload, if return false or promise, stop */
   beforeUpload? : (file: File) => boolean | Promise<File>;
-  /**文件上传时的钩子 */
+  /**The event when upload */
   onProgress?: (percentage: number, file: UploadFile) => void;
-  /**文件上传成功时的钩子 */
+  /**The event when upload successfully */
   onSuccess?: (data: any, file: UploadFile) => void;
-  /**文件上传失败时的钩子 */
+  /**The event when upload unsuccessfully */
   onError?: (err: any, file: UploadFile) => void;
-  /**文件状态改变时的钩子，上传成功或者失败时都会被调用	 */
+  /**The event when upload no matter successfully or unsuccessfully */
   onChange?: (file: UploadFile) => void;
-  /**文件列表移除文件时的钩子 */
+  /**The event when remove the file */
   onRemove?: (file: UploadFile) => void;
-  /**设置上传的请求头部 */
+  /**Set the header for upload */
   headers?: {[key: string]: any };
-  /**上传的文件字段名 */
+  /**Name for the file */
   name?: string;
-  /**上传时附带的额外参数 */
+  /**Additional data when upload */
   data?: {[key: string]: any };
-  /**支持发送 cookie 凭证信息 */
+  /**Sending cookies */
   withCredentials?: boolean;
-  /**可选参数, 接受上传的文件类型 */
+  /**Acceptable file types */
   accept?: string;
-  /**是否支持多选文件 */
+  /**If support uploading multiple files */
   multiple?: boolean;
-  /**是否支持拖拽上传 */
+  /**Support drag function or not */
   drag?: boolean;
 }
 
 /**
- * 通过点击或者拖拽上传文件
- * ### 引用方法
+ * Click or drag the file here for upload
+ * ### How to import
  * 
  * ~~~js
  * import { Upload } from 'vikingship'

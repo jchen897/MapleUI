@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions'
 import { Input } from './input'
 const defaultInput = () => (
   <Input
-    placeholder="漂亮的 Input"
+    placeholder="Great Input"
     onChange={action('changed')}
   />
 )
@@ -50,9 +50,9 @@ const pandInput = () => (
 )
 
 
-storiesOf('第九章：Input', module)
+storiesOf('Input', module)
   .add('Input', defaultInput)
-  .add('被禁用的 Input', disabledInput)
-  .add('带图标的 Input', iconInput)
-  .add('大小不同的 Input', sizeInput)
-  .add('带前后缀的 Input', pandInput)
+  .add('Disabled Input', disabledInput)
+  .add('Input with Icon', iconInput)
+  .add('Input with Size', sizeInput)
+  .add('Input with Prefix or Suffix', pandInput)

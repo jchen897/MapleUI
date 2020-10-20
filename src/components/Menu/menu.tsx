@@ -4,15 +4,15 @@ import { MenuItemProps } from './menuItem'
 
 type MenuMode = 'horizontal' | 'vertical'
 export interface MenuProps {
-  /**默认 active 的菜单项的索引值 */
+  /**Default Index Disable */
   defaultIndex?: string;
   className?: string;
-  /**菜单类型 横向或者纵向 */
+  /**Menu mode: horizontal or vertical */
   mode?: MenuMode;
   style?: CSSProperties;
-  /**点击菜单项触发的回掉函数 */
+  /**The event when clicking */
   onSelect?: (selectedIndex: string) => void;
-  /**设置子菜单的默认打开 只在纵向模式下生效 */
+  /**Enable default opened options */
   defaultOpenSubMenus?: string[];
 }
 interface IMenuContext {
@@ -24,10 +24,10 @@ interface IMenuContext {
 
 export const MenuContext = createContext<IMenuContext>({index: '0'})
 /**
- * 为网站提供导航功能的菜单。支持横向纵向两种模式，支持下拉菜单。
+ * Provide the navigation options for webiste.
  * ~~~js
  * import { Menu } from 'vikingship'
- * //然后可以使用 Menu.Item 和 Menu.Submenu 访问选项和子下拉菜单组件
+ * //Use Menu.Item and Menu.Submenu for the sub options and menu.
  * ~~~
  */
 export const Menu: FC<MenuProps> = (props) => {

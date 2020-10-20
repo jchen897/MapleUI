@@ -14,12 +14,12 @@ export const defaultMenu = () => (
     <Menu.Item disabled>
       disabled
     </Menu.Item> 
-    <Menu.SubMenu title="下拉选项">
+    <Menu.SubMenu title="Options">
       <Menu.Item>
-        下拉选项一
+        Option1
       </Menu.Item>
       <Menu.Item>
-        下拉选项二
+        Option2
       </Menu.Item>    
     </Menu.SubMenu>
   </Menu>
@@ -32,12 +32,12 @@ export const clickMenu = () => (
     <Menu.Item>
       cool link 2
     </Menu.Item>
-    <Menu.SubMenu title="点击下拉选项">
+    <Menu.SubMenu title="Options">
       <Menu.Item>
-        下拉选项一
+        Option1
       </Menu.Item>
       <Menu.Item>
-        下拉选项二
+        Option2
       </Menu.Item>    
     </Menu.SubMenu>
   </Menu>
@@ -50,18 +50,18 @@ export const openedMenu = () => (
     <Menu.Item>
       cool link 2
     </Menu.Item>
-    <Menu.SubMenu title="默认展开下拉选项">
+    <Menu.SubMenu title="Options">
       <Menu.Item>
-        下拉选项一
+        Option1
       </Menu.Item>
       <Menu.Item>
-        下拉选项二
+        Option2
       </Menu.Item>    
     </Menu.SubMenu>
   </Menu>
 )
 
-storiesOf('第六章：Menu', module)
-.add('Menu', defaultMenu )
-.add('纵向的 Menu', clickMenu)
-.add('默认展开的纵向 Menu', openedMenu)
+storiesOf('Menu', module)
+.add('Default Menu', defaultMenu )
+.add('Vertical Menu', clickMenu)
+.add('Opened Menu', openedMenu)

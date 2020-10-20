@@ -62,8 +62,8 @@ const customComplete = () => {
     const itemWithNumber = item as DataSourceType<LakerPlayerProps>
     return (
       <>
-        <b>名字: {itemWithNumber.value}</b>
-        <span>球衣号码: {itemWithNumber.number}</span>
+        <b>Name: {itemWithNumber.value}</b>
+        <span>Number: {itemWithNumber.number}</span>
       </>
     )
   }
@@ -78,7 +78,7 @@ const customComplete = () => {
 }
 
 const textCustom = `
-### 示例代码
+### Code Example
 ~~~javascript
 const lakersWithNumber = [
   {value: 'bradley', number: 11},
@@ -143,7 +143,7 @@ const ajaxComplete = () => {
 }
 
 const textAjax = `
-### 示例代码
+### Code Example
 ~~~javascript
 const handleFetch = (query: string) => {
   return fetch('https://api.github.com/search/users?q='+ query)

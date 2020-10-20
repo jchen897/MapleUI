@@ -7,9 +7,9 @@ import TabItem from './tabItem'
 import Icon from '../Icon'
 const defaultTabs = () => (
   <Tabs onSelect={action('selected')}>
-    <TabItem label="选项卡一">this is content one</TabItem>
-    <TabItem label="选项卡二">this is content two</TabItem>
-    <TabItem label="用户管理">this is content three</TabItem>
+    <TabItem label="Option1">this is content one</TabItem>
+    <TabItem label="Option2">this is content two</TabItem>
+    <TabItem label="Another Option">this is content three</TabItem>
   </Tabs>
 )
 
@@ -27,7 +27,7 @@ const customTabs = () => (
     <TabItem label="tab2">this is content two</TabItem>
   </Tabs> 
 )
-storiesOf('第六章作业：Tabs', module)
-  .add('Tabs', defaultTabs)
-  .add('选项卡样式的Tabs', cardTabs)
-  .add('自定义选项卡样式', customTabs)
+storiesOf('Tabs', module)
+  .add('Default Tabs', defaultTabs)
+  .add('Tabs with Style', cardTabs)
+  .add('Custom Tabs', customTabs)

@@ -7,19 +7,19 @@ import Transition from '../Transition/transition'
 import { SelectOptionProps } from './option'
 
 export interface SelectProps {
-  /**指定默认选中的条目	 可以是是字符串或者字符串数组*/
+  /**Set default value, string or array of string*/
   defaultValue?: string | string[];
-  /** 选择框默认文字*/
+  /**Set placeholder */
   placeholder?: string;
-  /** 是否禁用*/
+  /**Disable or not*/
   disabled?: boolean;
-  /** 是否支持多选*/
+  /**Support the multiple selection*/
   multiple?: boolean;
-  /** select input 的 name 属性	 */
+  /**Set the name*/
   name?: string;
-  /**选中值发生变化时触发 */
+  /**The event when changing selection*/
   onChange?: (selectedValue: string, selectedValues: string[]) => void;
-  /**下拉框出现/隐藏时触发 */
+  /**Set visible for options */
   onVisibleChange?: (visible: boolean) => void;
 }
 
@@ -30,14 +30,13 @@ export interface ISelectContext {
 }
 
 export const SelectContext = createContext<ISelectContext>({ selectedValues: []})
-/**
- * 下拉选择器。
- * 弹出一个下拉菜单给用户选择操作，用于代替原生的选择器，或者需要一个更优雅的多选器时。
- * ### 引用方法
+/**Click for selections
+ * Provide selections for users and support multiple selections
+ * ### How to import
  * 
  * ~~~js
  * import { Select } from 'vikingship'
- * // 然后可以使用 <Select> 和 <Select.Option>
+ * // Use <Select> and <Select.Option>
  * ~~~
  */
 export const Select:FC<SelectProps> = (props) => {
@@ -177,6 +176,6 @@ export const Select:FC<SelectProps> = (props) => {
 }
 Select.defaultProps = {
   name: 'viking-select',
-  placeholder: '请选择'
+  placeholder: 'Please Select'
 }
 export default Select;

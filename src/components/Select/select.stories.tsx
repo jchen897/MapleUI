@@ -5,44 +5,44 @@ import { action } from '@storybook/addon-actions'
 import Select from './index'
 const defaultSelect = () => (
   <Select
-    placeholder="请选择"
+    placeholder="Please Select"
     onChange={action('changed')}
     onVisibleChange={action('visible')}
   >
-    <Select.Option value="nihao" />
-    <Select.Option value="nihao2" />
-    <Select.Option value="nihao3" />
+    <Select.Option value="Hello" />
+    <Select.Option value="Hello1" />
+    <Select.Option value="Hello2" />
     <Select.Option value="disabled" disabled/>
-    <Select.Option value="nihao5" />
+    <Select.Option value="Hello4" />
   </Select>
 )
 const multipleSelect = () => (
   <Select
-    placeholder="支持多选欧！"
+    placeholder="Select mutiple options "
     onChange={action('changed')}
     onVisibleChange={action('visible')}
     multiple
   >
-    <Select.Option value="nihao" />
-    <Select.Option value="nihao2" />
-    <Select.Option value="nihao3" />
-    <Select.Option value="viking" />
-    <Select.Option value="viking2" />
+    <Select.Option value="Hello" />
+    <Select.Option value="Hello2" />
+    <Select.Option value="Hello3" />
+    <Select.Option value="Maple" />
+    <Select.Option value="Maple2" />
   </Select>
 )
 
 const disabledSelect = () => (
   <Select
-    placeholder="禁用啦！"
+    placeholder="Disable! "
     disabled
   >
-    <Select.Option value="nihao" />
-    <Select.Option value="nihao2" />
-    <Select.Option value="nihao3" />
+    <Select.Option value="Hello" />
+    <Select.Option value="Hello2" />
+    <Select.Option value="Hello3" />
   </Select>  
 )
 
-storiesOf('第九章作业：Select', module)
+storiesOf('Select', module)
   .add('Select', defaultSelect)
-  .add('支持多选的 Select', multipleSelect)
-  .add('被禁用的 Select', disabledSelect)
+  .add('Multiple Select', multipleSelect)
+  .add('Disabled Select', disabledSelect)

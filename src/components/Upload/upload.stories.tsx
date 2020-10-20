@@ -13,7 +13,7 @@ const simpleUpload = () => (
     onProgress={action('progress')}
     onRemove={action('removed')}
   >
-    <Button size="lg" btnType="primary"><Icon icon="upload" /> 点击上传 </Button>
+    <Button size="lg" btnType="primary"><Icon icon="upload" /> Upload </Button>
   </Upload>  
 )
 
@@ -36,7 +36,7 @@ const checkUpload = () => {
   )
 }
 const textCheck = `
-### 示例代码
+### Code example
 ~~~javascript
 const checkFileSize = (file: File) => {
   if (Math.round(file.size / 1024) > 50) {
@@ -67,11 +67,11 @@ const dragUpload = () => (
   >
     <Icon icon="upload" size="5x" theme="secondary" />
     <br/>
-    <p>点击或者拖动到此区域进行上传</p>
+    <p>Click or Drag the file here for upload</p>
   </Upload>
 )
 
-storiesOf('第十章：Upload', module)
-  .add('Upload', simpleUpload)
-  .add('上传前检查文件大小', checkUpload, {info: {source: false, text: textCheck}})
-  .add('拖动上传', dragUpload)
+storiesOf('Upload', module)
+  .add('Simple Upload', simpleUpload)
+  .add('Upload with Limited Size', checkUpload, {info: {source: false, text: textCheck}})
+  .add('Drag File for Upload', dragUpload)
