@@ -16,9 +16,9 @@ npm i maplecomponent
 
 ~~~javascript
 // Load Styles
-import 'vikingship/dist/index.css'
+import 'maplecomponent/dist/index.css'
 // Import Component
-import { Button } from 'vikingship'
+import { Button } from 'maplecomponent'
 ~~~
 
 ## Local Development
