@@ -4,11 +4,11 @@ import Icon from '../Icon'
 import { SelectContext } from './select'
 export interface SelectOptionProps {
   index?: string;
-  /** 默认根据此属性值进行筛选，该值不能相同*/
+  /** Values should be different*/
   value: string;
-  /** 选项的标签，若不设置则默认与 value 相同*/
+  /** Labels should be different*/
   label?: string;
-  /** 是否禁用该选项*/
+  /** Disable or not*/
   disabled?: boolean;
 }
 

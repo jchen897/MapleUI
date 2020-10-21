@@ -23,7 +23,7 @@ const cardTabs = () => (
 
 const customTabs = () => (
   <Tabs onSelect={action('selected')} type="card">
-    <TabItem label={<><Icon icon="check-circle" />  自定义图标</>}>this is card one</TabItem>
+    <TabItem label={<><Icon icon="check-circle" />  Customized Icon</>}>this is card one</TabItem>
     <TabItem label="tab2">this is content two</TabItem>
   </Tabs> 
 )

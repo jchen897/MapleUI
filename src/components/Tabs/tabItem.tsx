@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
 
 export interface TabItemProps {
-  /** Tab选项上面的文字 */
+  /** Label in Tab */
   label: string | React.ReactElement;
-  /** Tab选项是否被禁用 */
+  /** Disable Tab or not */
   disabled?: boolean;
 }
 

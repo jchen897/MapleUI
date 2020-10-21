@@ -31,7 +31,7 @@ const checkUpload = () => {
       onChange={action('changed')}
       beforeUpload={checkFileSize}
     >
-      <Button size="lg" btnType="primary"><Icon icon="upload" /> 不能传大于50Kb！ </Button>
+      <Button size="lg" btnType="primary"><Icon icon="upload" /> Less than 50Kb！ </Button>
     </Upload>  
   )
 }
@@ -51,7 +51,7 @@ return (
     onChange={action('changed')}
     beforeUpload={checkFileSize}
   >
-    <Button size="lg" btnType="primary"><Icon icon="upload" /> 不能传大于50Kb！ </Button>
+    <Button size="lg" btnType="primary"><Icon icon="upload" /> Less than 50Kb! </Button>
   </Upload>  
 )
 ~~~
