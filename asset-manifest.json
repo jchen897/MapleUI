@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/MapleUI/static/css/main.ce710467.chunk.css",
+    "main.js": "/MapleUI/main.30559e7868dc9ebc3ba9.bundle.js",
+    "main.css.map": "/MapleUI/static/css/main.ce710467.chunk.css.map",
+    "main.js.map": "/MapleUI/main.30559e7868dc9ebc3ba9.bundle.js.map",
+    "runtime~main.js": "/MapleUI/runtime~main.30559e7868dc9ebc3ba9.bundle.js",
+    "runtime~main.js.map": "/MapleUI/runtime~main.30559e7868dc9ebc3ba9.bundle.js.map",
+    "vendors~main.css": "/MapleUI/static/css/vendors~main.f8f248a5.chunk.css",
+    "vendors~main.js": "/MapleUI/vendors~main.30559e7868dc9ebc3ba9.bundle.js",
+    "vendors~main.css.map": "/MapleUI/static/css/vendors~main.f8f248a5.chunk.css.map",
+    "vendors~main.js.map": "/MapleUI/vendors~main.30559e7868dc9ebc3ba9.bundle.js.map",
+    "iframe.html": "/MapleUI/iframe.html",
+    "precache-manifest.18510b7fe4b0c506e5636064d8e2917e.js": "/MapleUI/precache-manifest.18510b7fe4b0c506e5636064d8e2917e.js",
+    "service-worker.js": "/MapleUI/service-worker.js",
+    "vendors~main.30559e7868dc9ebc3ba9.bundle.js.LICENSE.txt": "/MapleUI/vendors~main.30559e7868dc9ebc3ba9.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.30559e7868dc9ebc3ba9.bundle.js",
+    "static/css/vendors~main.f8f248a5.chunk.css",
+    "vendors~main.30559e7868dc9ebc3ba9.bundle.js",
+    "static/css/main.ce710467.chunk.css",
+    "main.30559e7868dc9ebc3ba9.bundle.js"
+  ]
+}
