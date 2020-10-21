@@ -26,7 +26,7 @@ export const MenuContext = createContext<IMenuContext>({index: '0'})
 /**
  * Provide the navigation options for webiste.
  * ~~~js
- * import { Menu } from 'vikingship'
+ * import { Menu } from 'maplecomponent'
  * //Use Menu.Item and Menu.Submenu for the sub options and menu.
  * ~~~
  */

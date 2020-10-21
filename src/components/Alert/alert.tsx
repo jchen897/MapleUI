@@ -22,7 +22,7 @@ export interface AlertProps {
  * ### How to import
  * 
  * ~~~js
- * import { Alert } from 'vikingship'
+ * import { Alert } from 'maplecomponent'
  * ~~~
 */
 export const Alert: FC<AlertProps> = (props) => {

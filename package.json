@@ -1,8 +1,8 @@
 {
-  "name": "vikingship",
+  "name": "maplecomponent",
   "version": "1.0.2",
-  "description": "React components library",
-  "author": "Viking Zhang",
+  "description": "React UI components library",
+  "author": "Jiawei Chen",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -11,12 +11,13 @@
   "keywords": [
     "Component",
     "UI",
+    "TypeScript",
     "React"
   ],
-  "homepage": "http://vikingship.xyz",
+  "homepage": "https://jchen897.github.io/MapleUI",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vikingmute/vikingship"
+    "url": "https://github.com/jchen897/MapleUI"
   },
   "files": [
     "dist"
@@ -30,7 +31,9 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "yarn": "^1.22.10",
+    "yarn-deduplicate": "^3.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -48,7 +51,7 @@
     "build-css": "node-sass ./src/styles/index.scss ./dist/index.css",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "prepublishOnly": "npm run test:nowatch && npm run lint && npm run build"
+    "prepublishOnly": "npm run build"
   },
   "husky": {
     "hooks": {
@@ -93,6 +96,6 @@
     "react-dom": "^16.14.0",
     "react-scripts": "3.2.0",
     "rimraf": "^3.0.2",
-    "typescript": "3.7.2"
+    "typescript": "^3.7.2"
   }
 }

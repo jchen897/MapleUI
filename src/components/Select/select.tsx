@@ -35,7 +35,7 @@ export const SelectContext = createContext<ISelectContext>({ selectedValues: []}
  * ### How to import
  * 
  * ~~~js
- * import { Select } from 'vikingship'
+ * import { Select } from 'maplecomponent'
  * // Use <Select> and <Select.Option>
  * ~~~
  */

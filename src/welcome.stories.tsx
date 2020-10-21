@@ -9,7 +9,7 @@ https://jchen897.github.io/MapleUI
 ### Please try to install the component library
 
 ~~~javascript
-npm install vikingship --save
+npm i maplecomponent
 ~~~
 
 ### How to import

@@ -23,7 +23,7 @@ export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
  * ### How to import
  * 
  * ~~~js
- * import { Button } from 'vikingship'
+ * import { Button } from 'maplecomponent'
  * ~~~
  */
 export const Button: FC<ButtonProps> = (props) => {

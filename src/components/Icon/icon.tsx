@@ -18,7 +18,7 @@ export interface IconProps extends FontAwesomeIconProps {
  * ### How to import
  * 
  * ~~~js
- * import { Icon } from 'vikingship'
+ * import { Icon } from 'maplecomponent'
  * ~~~
  */
 export const Icon: FC<IconProps> = (props) => {

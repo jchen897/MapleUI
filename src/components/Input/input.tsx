@@ -23,7 +23,7 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
  * 
  * ~~~js
  * // How to import
- * import { Input } from 'vikingship'
+ * import { Input } from 'maplecomponent'
  * ~~~
  * 
  * Support HTMLInput properties.

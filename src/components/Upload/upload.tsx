@@ -51,7 +51,7 @@ export interface UploadProps {
  * ### How to import
  * 
  * ~~~js
- * import { Upload } from 'vikingship'
+ * import { Upload } from 'maplecomponent'
  * ~~~
  */
 export const Upload: FC<UploadProps> = (props) => {

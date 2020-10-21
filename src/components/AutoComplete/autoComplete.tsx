@@ -26,7 +26,7 @@ export interface AutoCompleteProps extends Omit<InputProps, 'onSelect'> {
  * ### How to import
  * 
  * ~~~js
- * import { AutoComplete } from 'vikingship'
+ * import { AutoComplete } from 'maplecomponent'
  * ~~~
  */
 export const AutoComplete: FC<AutoCompleteProps> = (props) => {

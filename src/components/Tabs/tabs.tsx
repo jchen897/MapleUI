@@ -18,7 +18,7 @@ export interface TabsProps {
  * ### How to import
  * 
  * ~~~js
- * import { Tabs } from 'vikingship'
+ * import { Tabs } from 'maplecomponent'
  * ~~~
  */
 export const Tabs: FC<TabsProps> = (props) => {
